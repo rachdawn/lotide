@@ -11,10 +11,7 @@ const assertEqual = function(actual, expected) {
 
 const head = function(input) {
   if (input.length >= 1) {
-    let firstElement = input[0];
-    return firstElement;
-  } else {
-    return undefined;
+    return input[0];
   }
 };
 
