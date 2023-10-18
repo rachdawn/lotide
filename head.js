@@ -11,12 +11,16 @@ const assertEqual = function(actual, expected) {
 
 const head = function(input) {
   if (input.length >= 1) {
-    let firstElement = input[0].toString();
+    let firstElement = input[0];
     return firstElement;
   } else {
-    return "undefined";
+    return undefined;
   }
 };
 
 assertEqual(head([5, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head(["rachel"]), "rachel");
+assertEqual(head(["rachel"]), "Rachel");
+assertEqual(head([]));
+
