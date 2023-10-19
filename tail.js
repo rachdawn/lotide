@@ -10,13 +10,11 @@ const assertEqual = function(actual, expected) {
 
 const tail = function(input) {
   if (input.length >= 1) {
-    const arrayTail = input.splice(1);
+    const arrayTail = input.slice(1);
     return arrayTail;
   } else {
     return []
   }
-  }
-
 };
 
 
