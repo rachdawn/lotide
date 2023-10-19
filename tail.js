@@ -13,7 +13,7 @@ const tail = function(input) {
     const arrayTail = input.slice(1);
     return arrayTail;
   } else {
-    return []
+    return [];
   }
 };
 
