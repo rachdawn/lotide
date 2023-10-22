@@ -27,7 +27,7 @@ const middle = function (array) {
     // return middle element
     const oddMiddle = Math.floor(array.length / 2);
     return [array[oddMiddle]];
-  } else if (array.length % 2 === 0) {
+  } else {
     // return two middle elements
     const evenMiddle1 = array.length / 2 - 1;
     const evenMiddle2 = array.length / 2;
