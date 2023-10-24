@@ -15,16 +15,17 @@ const countLetters = function(string) {
 
   for (const letter of string) {
     if (string[letter]) {
-        if (string[letter] === object[letter]) {
+      if (string[letter] === object[letter]) {
         object[letter] += 1;
-        }
-        if (string[letter] === " ") {
+      }
+      if (string[letter] === " ") {
         object[letter]++;
-        } else {
+      } else {
         object[letter] = 1;
-        }
+      }
     }
-    return object;
+  }
+  return object;
 };
 
 console.log(countLetters("count my letters"));
