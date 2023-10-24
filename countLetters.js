@@ -14,14 +14,15 @@ const countLetters = function(string) {
   const object = {};
 
   for (const letter of string) {
-    if (string[letter]) {
-      if (string[letter] === object[letter]) {
+    if (letter) {
+      if (object[letter]) {
         object[letter] += 1;
-      }
-      if (string[letter] === " ") {
-        object[letter]++;
       } else {
         object[letter] = 1;
+      }
+
+      if (letter === " ") {
+        !object[letter];
       }
     }
   }
@@ -30,4 +31,4 @@ const countLetters = function(string) {
 
 console.log(countLetters("count my letters"));
 
-assertEqual(countLetters(object["c"], 1));
+assertEqual(object["c"], 1);
