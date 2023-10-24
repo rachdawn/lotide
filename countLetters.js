@@ -18,19 +18,17 @@ const countLetters = function(string) {
       continue;
     }
 
-    if (letter) {
-      if (object[letter]) {
-        object[letter] += 1;
-      } else {
-        object[letter] = 1;
-      }
+    if (object[letter]) {
+      object[letter] += 1;
+    } else {
+      object[letter] = 1;
     }
   }
   return object;
 };
 
 const result = countLetters("count my letters");
-console.log(result)
+console.log(result);
 assertEqual(result["c"], 1);
 assertEqual(result[" "], undefined);
 assertEqual(result["t"], 3);
