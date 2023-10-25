@@ -1,5 +1,5 @@
 // assertion test
-const assertEqual = require('../assertEqual');
+const assertEqual = require('./assertArraysEqual');
 
 // write a function that can compare two arrays for a perfect
 const eqArrays = function(arr1, arr2) {
