@@ -18,7 +18,6 @@ const findKeyByValue = function(object, value) {
       return key;
     }
   }
-  return undefined;
 };
 
 // test cases:
